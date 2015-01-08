@@ -1,7 +1,6 @@
 package threading;
 
-import threading.lecture1.Executor1;
-import threading.lecture2.Executor2;
+import threading.lecture3.App;
 
 /**
  * .
@@ -10,6 +9,7 @@ import threading.lecture2.Executor2;
 public class Main {
 
 	public static void main(String[] args) {
-		Executor2.execute();
+		App theApp = new App();
+		theApp.doWork();
 	}
 }

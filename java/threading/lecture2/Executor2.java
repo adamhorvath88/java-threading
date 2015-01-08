@@ -24,7 +24,8 @@ class Processor extends Thread {
 }
 
 /**
- * .
+ * Basic thread synchronization.
+ *
  * @author ahorvath
  */
 public class Executor2 {

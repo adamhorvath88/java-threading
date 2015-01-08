@@ -33,7 +33,8 @@ class Runner implements Runnable {
 }
 
 /**
- * .
+ * Starting threads.
+ *
  * @author ahorvath
  */
 public class Executor1 {
