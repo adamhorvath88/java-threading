@@ -1,6 +1,8 @@
 package threading;
 
-import threading.lecture3.App;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import threading.lecture4.Worker;
 
 /**
  * .
@@ -9,7 +11,11 @@ import threading.lecture3.App;
 public class Main {
 
 	public static void main(String[] args) {
-		App theApp = new App();
-		theApp.doWork();
+		try {
+			Worker worker = new Worker();
+			worker.main();
+		} catch (InterruptedException ex) {
+			Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
+		}
 	}
 }
